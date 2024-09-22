@@ -21,9 +21,11 @@ const Navbar = () => {
             src={assets.arrow_right}
             alt=""
           />
-          <Button>All</Button>
-          <Button>Music</Button>
-          <Button>Podcasts</Button>
+          <div className="hidden sm:flex sm:gap-2">
+            <Button>All</Button>
+            <Button>Music</Button>
+            <Button>Podcasts</Button>
+          </div>
         </div>
 
         <div className="flex items-center gap-4">
@@ -33,8 +35,11 @@ const Navbar = () => {
           <p className="bg-green-700 py-1 px-3 rounded-2xl text-[15px] cursor-pointer">
             Install App
           </p>
-          <p className="bg-yellow-500 text-black w-7 h-7 rounded-full flex items-center justify-center">
-            S
+          <p
+            onClick={() => navigate("/admin")}
+            className="bg-yellow-500 px-1.5 py-1 text-black rounded-full flex items-center justify-center hover:cursor-pointer"
+          >
+            USER
           </p>
         </div>
       </div>

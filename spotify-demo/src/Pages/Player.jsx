@@ -18,7 +18,7 @@ const Player = () => {
   const { name, image, desc } = track;
 
   return (
-    <div className="h-[10vh] min-h-[70px] w-screen fixed bottom-0 bg-green-900 flex justify-between items-center text-white px-4">
+    <div className="h-[max(10vh,40px)] w-screen bg-green-900 flex justify-between items-center text-white px-4">
       <div className="hidden lg:flex items-center gap-4">
         <img className="w-12" src={image} alt="" />
         <div>
